@@ -1,0 +1,24 @@
+.emergency-banner {
+  background: var(--urgent);
+  color: var(--on-urgent);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+  margin-bottom: var(--space-6);
+}
+
+.emergency-banner .h1 {
+  margin-bottom: var(--space-2);
+}
+
+.emergency-banner p {
+  color: var(--on-urgent);
+  max-width: 68ch;
+  opacity: 0.92;
+}
+
+.emergency-featured {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-5);
+  margin-bottom: var(--space-6);
+}

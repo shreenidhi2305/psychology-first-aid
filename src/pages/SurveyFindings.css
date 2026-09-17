@@ -1,0 +1,87 @@
+.survey-methodology {
+  background: var(--surface-raised);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  margin-bottom: var(--space-5);
+  color: var(--ink);
+  max-width: 72ch;
+}
+
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--space-4);
+  margin-bottom: var(--space-7);
+}
+
+.stat-card {
+  background: var(--primary-strong);
+  color: var(--on-primary);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.stat-value {
+  font-size: 32px;
+  line-height: 38px;
+}
+
+.stat-detail {
+  color: var(--on-primary);
+  opacity: 0.9;
+}
+
+.survey-block {
+  margin-bottom: var(--space-7);
+}
+
+.survey-block-title {
+  margin-bottom: var(--space-2);
+}
+
+.survey-block-lead {
+  color: var(--ink-muted);
+  margin-bottom: var(--space-4);
+  max-width: 68ch;
+}
+
+.likert-grid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.donut-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: var(--space-5);
+}
+
+.donut-card {
+  background: var(--surface-raised);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+}
+
+.donut-card-title {
+  margin-bottom: var(--space-4);
+}
+
+.survey-closing {
+  background: var(--surface-sunken);
+  border-radius: var(--radius-md);
+  padding: var(--space-5);
+  color: var(--ink);
+  max-width: 72ch;
+  margin-bottom: var(--space-4);
+}
+
+.survey-source {
+  color: var(--ink-muted);
+  display: block;
+}

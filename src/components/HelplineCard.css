@@ -1,0 +1,90 @@
+.helpline-card {
+  background: var(--surface-raised);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  box-shadow: var(--shadow-sm);
+  color: var(--ink);
+}
+
+.helpline-card-name {
+  margin: 0 0 var(--space-1) 0;
+}
+
+.helpline-card-desc {
+  margin: 0 0 var(--space-3) 0;
+  color: var(--ink);
+}
+
+.helpline-card-tel {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  text-decoration: none;
+  color: var(--primary);
+  margin-bottom: var(--space-2);
+  border-radius: 6px;
+  word-break: break-word;
+}
+
+.helpline-card-tel .icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.helpline-card-location {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-2);
+  color: var(--ink-muted);
+  margin-bottom: var(--space-2);
+}
+
+.helpline-card-location .icon {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.helpline-card-meta {
+  display: block;
+  color: var(--ink-muted);
+}
+
+.helpline-card-note {
+  display: block;
+  color: var(--ink-muted);
+}
+
+/* Emergency-page scale-up: on-urgent-on-urgent styling for the top national lines. */
+.helpline-card.urgent {
+  background: var(--urgent);
+  color: var(--on-urgent);
+}
+
+.helpline-card.urgent .helpline-card-desc {
+  color: var(--on-urgent);
+}
+
+.helpline-card.urgent .helpline-card-tel {
+  color: var(--on-urgent);
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 600;
+}
+
+.helpline-card.urgent .helpline-card-tel .icon {
+  width: 26px;
+  height: 26px;
+}
+
+.helpline-card.urgent .helpline-card-meta,
+.helpline-card.urgent .helpline-card-note {
+  color: var(--on-urgent);
+  opacity: 0.85;
+}
+
+.helpline-card.urgent .helpline-card-tel:focus-visible {
+  outline-color: var(--on-urgent);
+}

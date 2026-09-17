@@ -1,0 +1,158 @@
+@import './tokens.css';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--surface);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Type styles, from tokens.json `type.groups` */
+.display {
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.h1 {
+  font-size: 30px;
+  line-height: 38px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.h2 {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.h3 {
+  font-size: 19px;
+  line-height: 26px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.body-lg {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.body {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.label {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.caption {
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  margin: 0;
+}
+
+a {
+  color: var(--primary);
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+.skip-link {
+  position: absolute;
+  top: -48px;
+  left: var(--space-3);
+  z-index: 100;
+  background: var(--primary-strong);
+  color: var(--on-primary);
+  padding: 10px 16px;
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  transition: top 0.15s ease;
+}
+
+.skip-link:focus-visible {
+  top: var(--space-3);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 var(--space-4);
+}
+
+.section {
+  padding: var(--space-6) 0;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--space-5);
+}
+
+.page-eyebrow {
+  color: var(--primary);
+  display: block;
+  margin-bottom: var(--space-2);
+}
+
+.page-title {
+  margin-bottom: var(--space-2);
+}
+
+.page-lead {
+  color: var(--ink);
+  max-width: 68ch;
+  margin-bottom: var(--space-6);
+}

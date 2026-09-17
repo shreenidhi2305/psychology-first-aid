@@ -1,0 +1,42 @@
+.crisis-banner {
+  position: fixed;
+  right: var(--space-4);
+  bottom: var(--space-4);
+  z-index: 40;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  background: var(--urgent);
+  color: var(--on-urgent);
+  border-radius: var(--radius-lg);
+  padding: 14px 22px;
+  box-shadow: var(--shadow-md);
+  text-decoration: none;
+}
+
+.crisis-banner .icon {
+  width: 18px;
+  height: 18px;
+}
+
+.crisis-banner:hover {
+  filter: brightness(0.95);
+}
+
+@media (min-width: 721px) {
+  .crisis-banner {
+    right: var(--space-5);
+    bottom: var(--space-5);
+  }
+}
+
+[dir='rtl'] .crisis-banner {
+  right: auto;
+  left: var(--space-4);
+}
+
+@media (min-width: 721px) {
+  [dir='rtl'] .crisis-banner {
+    left: var(--space-5);
+  }
+}

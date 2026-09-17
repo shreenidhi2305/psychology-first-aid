@@ -1,0 +1,58 @@
+/* Haven design tokens — generated from the Haven design system (project/tokens.json). */
+:root {
+  /* Color */
+  --surface: #FAF7F1;
+  --surface-raised: #FFFFFF;
+  --surface-sunken: #F1EDE3;
+  --border: #E4DDCC;
+  --ink: #2A2E2B;
+  --ink-muted: #5B655F;
+  --primary: #3E6F62;
+  --primary-strong: #2C5148;
+  --primary-strong-hover: #234238;
+  --on-primary: #FFFFFF;
+  --accent: #9C5A31;
+  --on-accent: #FFFFFF;
+  --success: #2F6B45;
+  --urgent: #B23B2E;
+  --on-urgent: #FFFFFF;
+  --focus-ring: #2C5148;
+
+  /* Type */
+  --font-sans: 'Lexend', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  /* Spacing */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 16px;
+  --space-4: 24px;
+  --space-5: 32px;
+  --space-6: 48px;
+  --space-7: 72px;
+
+  /* Radius */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+
+  /* Shadow */
+  --shadow-sm: 0 1px 2px rgba(42, 46, 43, 0.06);
+  --shadow-md: 0 8px 24px rgba(42, 46, 43, 0.12);
+
+  /* Chart — sequential ramp (light to dark) for Likert-style distributions,
+     plus a small categorical set for pie/donut charts. Kept in-family with
+     the core palette so the Survey Findings page doesn't read as alarming. */
+  --chart-seq-1: #DCE8E3;
+  --chart-seq-2: #A9C7BC;
+  --chart-seq-3: #6FA392;
+  --chart-seq-4: #3E6F62;
+  --chart-seq-5: #234238;
+  --chart-cat-1: #3E6F62;
+  --chart-cat-2: #9C5A31;
+  --chart-cat-3: #6FA392;
+  --chart-cat-4: #C98F5E;
+  --chart-cat-5: #2C5148;
+  --chart-cat-6: #5B655F;
+  --chart-cat-7: #8AA9A0;
+  --chart-cat-8: #B23B2E;
+}

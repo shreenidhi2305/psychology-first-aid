@@ -1,0 +1,133 @@
+.hero {
+  display: flex;
+  align-items: center;
+  gap: var(--space-6);
+  padding: var(--space-7) 0;
+}
+
+.hero-copy {
+  flex: 1 1 420px;
+}
+
+.hero-eyebrow {
+  color: var(--primary);
+  display: block;
+  margin-bottom: var(--space-2);
+}
+
+.hero-copy .display {
+  margin-bottom: var(--space-3);
+}
+
+.hero-copy .body-lg {
+  color: var(--ink);
+  margin-bottom: var(--space-4);
+  max-width: 52ch;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+.hero-art {
+  flex: 1 1 320px;
+  max-width: 420px;
+}
+
+.hero-art svg {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-lg);
+}
+
+.nav-tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: var(--space-4);
+}
+
+.nav-tile {
+  display: block;
+  background: var(--surface-raised);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  padding: var(--space-4);
+  text-decoration: none;
+  color: var(--ink);
+}
+
+.nav-tile-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-sm);
+  background: var(--surface-sunken);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--space-3);
+}
+
+.nav-tile-icon .icon {
+  color: var(--primary);
+  width: 20px;
+  height: 20px;
+}
+
+.nav-tile-title {
+  margin: 0 0 var(--space-1) 0;
+}
+
+.nav-tile-desc {
+  margin: 0;
+  color: var(--ink-muted);
+}
+
+.section-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-4);
+  margin-bottom: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.crisis-strip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+  background: var(--urgent);
+  color: var(--on-urgent);
+  border-radius: var(--radius-lg);
+  padding: var(--space-4) var(--space-5);
+}
+
+.crisis-strip p {
+  margin: 0;
+  max-width: 60ch;
+}
+
+.crisis-strip .btn.secondary {
+  color: var(--on-urgent);
+  border-color: var(--on-urgent);
+}
+
+.crisis-strip .btn.secondary:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+@media (max-width: 720px) {
+  .hero {
+    flex-direction: column;
+    align-items: stretch;
+    padding: var(--space-6) 0;
+  }
+
+  .hero-art {
+    order: -1;
+    max-width: 100%;
+  }
+}
